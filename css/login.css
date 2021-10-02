@@ -1,0 +1,239 @@
+body {
+    background-color: var(--insta-background);
+    height: 100%;
+    width: 100%;
+}
+
+:root {
+    --activated-button: #0095F6;
+    --deactivated-button: #B2DFFC;
+    --insta-background: #FAFAFA;
+    --insta-foreground: #FFFFFF;
+    --insta-link: #385185;
+    --insta-outline: #DBDBDB;
+    --insta-text: rgb(128, 127, 127);
+}
+
+.flex {
+    display: flex;
+}
+
+.main_content,
+.main_login-inputs {
+    margin: 0 auto;
+    margin-top: 3rem;
+    width: 100%;
+}
+
+.main_content {
+    align-items: center;
+    justify-content: center;
+    max-width: 935px;
+    width: 100%;
+}
+
+.main_banner img {
+    max-height: 650px;
+    max-width: 550px;
+}
+
+.main_login {
+    max-width: 350px;
+    width: 100%;
+}
+
+.main_login,
+.main_login div,
+.main_login-inputs,
+.main_login_get-the-app,
+.main_footer {
+    flex-direction: column;
+}
+
+.main_login-form,
+.main_login_new-account {
+    background-color: var(--insta-foreground);
+    border: 1px solid var(--insta-outline);
+    padding: 1rem;
+}
+
+.main_login_new-account {
+    align-items: center;
+    height: 4rem;
+    justify-content: center;
+}
+
+.main_login-form {
+    margin-bottom: .8rem;
+}
+
+.main_logo {
+    justify-content: center;
+}
+
+.main_logo img {
+    max-width: 195px;
+}
+
+.main_login-inputs input {
+    display: block;
+    height: 2.3rem;
+    width: 80%;
+}
+
+.main_login-inputs input:not(:last-child) {
+    margin-bottom: .6rem;
+}
+
+.main_login-inputs input:not([type="submit"]) {
+    background-color: var(--insta-background);
+    border-radius: .1rem;
+    font-size: 1rem;
+    outline: 1px solid var(--insta-outline);
+    padding-left: .5rem;
+}
+
+.main_login-inputs {
+    align-items: center;
+}
+
+.main_login-inputs input::placeholder {
+    color: var(--insta-text);
+    font-size: .75rem;
+}
+
+.main_login-inputs-submit {
+    background-color: var(--deactivated-button);
+    color: var(--insta-foreground);
+    font-size: .89rem;
+    font-weight: 500;
+    height: 1.7rem;
+    height: 1.8rem !important;
+    margin-top: .35rem;
+}
+
+.main_login-inputs-submit {
+    border-radius: .26rem;
+}
+
+.main_login_choose {
+    align-items: center;
+    color: var(--insta-text);
+    font-size: .8rem;
+    font-weight: 500;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+    margin-top: 1rem;
+    text-transform: uppercase;
+    width: 100%;
+}
+
+.main_login_choose::before {
+    margin-right: 1rem;
+}
+
+.main_login_choose::after {
+    margin-left: 1rem;
+}
+
+.main_login_choose::before,
+.main_login_choose::after {
+    align-self: center;
+    background-color: var(--insta-outline);
+    content: '';
+    display: block;
+    height: 1px;
+    width: 30%;
+}
+
+.main_login_facebook-login {
+    align-items: center;
+    justify-content: center;
+}
+
+.main_login_facebook-login {
+    font-size: .9rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.main_login_facebook-login img {
+    height: 1rem;
+    margin-right: .59rem;
+    width: 1.05rem;
+}
+
+.main_login_forget-password {
+    font-size: .75rem;
+    justify-content: center;
+}
+
+.main_login_create-account,
+.main_login_create-account a {
+    font-size: .9rem;
+}
+
+.main_login_create-account {
+    text-align: center;
+    width: 100%;
+}
+
+.main_login_create-account a {
+    color: var(--activated-button);
+    font-weight: 500;
+}
+
+.main_login_get-the-app {
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.main_login_get-the-app p {
+    font-size: .9rem;
+}
+
+.main_login_get-the-app img {
+    margin-top: 1.3rem;
+    width: 8.5rem;
+}
+
+.main_login_get-the-app_apple-store {
+    margin-right: .3rem;
+}
+
+.main_footer {
+    align-items: center;
+    margin-top: 3rem;
+}
+
+.main_footer-menu {
+    align-items: center;
+    flex-flow: row wrap;
+    justify-content: center;
+    max-width: 800px;
+}
+
+.main_footer-menu li {
+    margin-right: 1rem;
+}
+
+.main_footer-menu li a {
+    color: var(--insta-text);
+    font-size: .75rem;
+}
+
+.main_footer-copyright select,
+.main_footer-copyright span {
+    color: var(--insta-text);
+    font-size: .75rem;
+}
+
+.main_footer-copyright select {
+    background-color: var(--insta-background);
+    margin-bottom: 4rem;
+    margin-top: 1rem;
+}
+
+.main_footer-copyright select option {
+    font-size: .8rem;
+}
